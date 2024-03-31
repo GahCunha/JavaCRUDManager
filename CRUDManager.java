@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
  */
 public class CRUDManager<T extends Serializable> {
     private List<T> items;
-    private String filePath;
+    private final String filePath;
 
     /**
      * Cria uma instância de CRUDManager com o caminho do arquivo especificado.
